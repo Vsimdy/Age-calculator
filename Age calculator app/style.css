@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5em;
+  width: 95%;
+  max-width: 600px;
+  max-height: 90%;
+  border-radius: 3%;
+  border-bottom-right-radius: 35%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.flex-container > div {
+  width: 100p;
+  max-width: 30%;
+  margin: 1.5%;
+}
+
+.flex-container > div > input {
+  padding: 0.5em;
+  margin: 0.4em 0;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 86%);
+  padding: 0.8em;
+  max-width: 100%;
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.flex-container > div > label {
+  color: hsl(0, 1%, 44%);
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.submit-container {
+  position: relative;
+  padding: 1em;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  position: absolute;
+  left: 40%;
+  top: -20%;
+}
+
+img {
+  width: 50%;
+}
+
+@media only screen and (min-width: 675px) {
+  button {
+    left: 85%;
+  }
+
+  .flex-container {
+    margin: 0;
+  }
+}
+
+.result-container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-size: 4em;
+  font-weight: 900;
+  margin-top: 5%;
+}
+
+.result-container > div {
+  padding: 0;
+  margin-top: 2px;
+  display: flex;
+}
+
+.result-container > div > div {
+  width: 15;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(259, 100%, 65%);
+}
+
+.result-container > div > div > span {
+  width: 30px;
+  max-width: 40%;
+  height: 20%;
+  max-height: 10px;
+  margin: 10%;
+  margin-top: 20%;
+  background-color: hsl(259, 100%, 65%);
+}
