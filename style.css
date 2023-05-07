@@ -35,6 +35,11 @@ main {
   margin: 1.5%;
 }
 
+.result-container > div h1 {
+  font-size: 1.3em;
+  margin: 0;
+}
+
 .flex-container > div > input {
   padding: 0.5em;
   margin: 0.4em 0;
