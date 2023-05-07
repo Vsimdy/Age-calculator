@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <div class="flex-container">
+          <div>
+            <label class="label" for="day">DAY</label><br />
+            <input
+              class="input"
+              id="day"
+              name="day"
+              type="number"
+              min="1"
+              max="31"
+              placeholder="DD"
+              oninput="this.value = ('0' + this.value).slice(-2);"
+              uired /><br />
+            <span class="span">11</span>
+          </div>
+
+          <div>
+            <label class="label" for="month">MONTH</label><br />
+            <input
+              class="input"
+              id="month"
+              name="month"
+              type="number"
+              min="01"
+              max="12"
+              placeholder="MM"
+              oninput="this.value = ('0' + this.value).slice(-2);"
+              uired /><br />
+            <span class="span">11</span>
+          </div>
+
+          <div>
+            <label class="label" for="year">YEAR</label><br />
+            <input
+              class="input"
+              id="year"
+              name="year"
+              type="number"
+              min="1900"
+              max="2023"
+              placeholder="YYYY"
+              uired /><br />
+            <span class="span">11</span>
+          </div>
+        </div>
+
+        <div class="submit-container">
+          <button type="button" id="btn" onclick="calculateAge();">
+            <img src="icon-arrow.svg" alt="" />
+          </button>
+          <hr />
+        </div>
+
+        <div class="result-container">
+          <div>
+            <div class="years">
+              <span></span>
+              <span></span>
+            </div>
+            <span>years</span>
+          </div>
+
+          <div>
+            <div class="months">
+              <span></span>
+              <span></span>
+            </div>
+            <span>months</span>
+          </div>
+
+          <div>
+            <div class="days">
+              <span></span>
+              <span></span>
+            </div>
+            <span>days</span>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
