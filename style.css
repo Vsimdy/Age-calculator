@@ -21,6 +21,7 @@ main {
   border-radius: 3%;
   border-bottom-right-radius: 35%;
   margin: 0 auto;
+  box-shadow: 2px 2px 2000px black;
 }
 
 .flex-container {
