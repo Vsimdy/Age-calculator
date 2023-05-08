@@ -21,7 +21,16 @@ main {
   border-radius: 3%;
   border-bottom-right-radius: 35%;
   margin: 0 auto;
-  box-shadow: 2px 2px 2px rgb(21, 21, 21), -2px -2px 2px rgb(21, 21, 21);
+  box-shadow: 2px 2px 20px rgb(21, 21, 21), -2px -2px 20px rgb(21, 21, 21);
+}
+
+header h1 {
+  text-align: center;
+  color: hsl(259, 100%, 65%);
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  text-shadow: 1px 1px 1px black;
 }
 
 .flex-container {
@@ -46,7 +55,7 @@ main {
   border: 1px solid hsl(0, 0%, 86%);
   padding: 0.8em;
   width: 100%;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: 800;
 }
 
