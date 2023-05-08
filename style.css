@@ -20,6 +20,7 @@ main {
   max-height: 90%;
   border-radius: 3%;
   border-bottom-right-radius: 35%;
+  margin: 0 auto;
 }
 
 .flex-container {
@@ -29,11 +30,11 @@ main {
   width: 100%;
   margin-bottom: 2em;
   margin-top: 2em;
+  width: 80%;
 }
 
 .flex-container > div {
-  width: 100p;
-  max-width: 30%;
+  width: 30%;
   margin: 1.5%;
 }
 
@@ -43,7 +44,7 @@ main {
   border-radius: 5px;
   border: 1px solid hsl(0, 0%, 86%);
   padding: 0.8em;
-  max-width: 100%;
+  width: 100%;
   font-size: 1.3em;
   font-weight: 800;
 }
@@ -54,9 +55,14 @@ main {
   font-weight: 600;
 }
 
+.flex-container > div > .span {
+  font-size: 0.8em;
+}
+
 .submit-container {
   position: relative;
   padding: 1em;
+  margin: 2em 0;
 }
 
 button {
@@ -84,16 +90,23 @@ img {
   }
 }
 
+@media only screen and (max-width: 675px) {
+  .flex-container {
+    margin: 0 auto;
+  }
+}
+
 .result-container {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
   font-weight: 900;
-  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .result-container > div {
   padding: 0;
-  margin-top: 2px;
   display: flex;
 }
 
@@ -103,7 +116,6 @@ img {
 }
 
 .result-container > div > div {
-  width: 15;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,4 +131,19 @@ img {
   margin: 10%;
   margin-top: 20%;
   background-color: hsl(259, 100%, 65%);
+}
+
+@media only screen and (max-width: 675px) {
+  .result-container > div h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .result-container > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(259, 100%, 65%);
+    font-size: 1.5em;
+  }
 }
